@@ -1,6 +1,6 @@
 {
   "name": "bnfgen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Random text generator that takes BNF-like grammar descriptions",
   "main": "bnfgen_module.js",
   "homepage": "https://github.com/dmbaturin/bnfgen-js",
@@ -14,7 +14,8 @@
   "keywords": [
     "grammar",
     "bnf",
-    "stars"
+    "dsl",
+    "generator"
   ],
   "author": "Daniil Baturin <daniil+npm@baturin.org>",
   "license": "MIT"
