@@ -11,11 +11,12 @@ Features:
 Grammar example:
 
 ```
-# The recusrive "<symbol> <start>" alternative will be take n 10 times more often
-# to produce longer sequences
+# You can add "weights" to your rules.
+# The recursive "<symbol> <start>" alternative will be taken 10 times more often
+# to produce longer sequences.
 <start> ::= <symbol> | 10 <symbol> <start> ;
 
-# Deterministic repetition: up to 10 of "foo" or exactly two of "baz"
+# Deterministic repetition: up to 10 of "foo" or exactly two of "baz".
 <symbol> ::= <fooOrBar>{1,10} | "baz"{2} ;
 
 <fooOrBar> ::= "foo" | "bar"
@@ -49,7 +50,8 @@ bnfgen.generate('greeting') // generates "hello" or "hi"
 //// Limits
 
 // Maximum number of reductions you allow to perform
-// or raise an error if it's exceeded
+// (bnfgen will raise an error if it's exceeded)
+// 0 means no limit
 bnfgen.maxReductions = 0
 
 // Maximum number of reductions that don't produce any terminals
