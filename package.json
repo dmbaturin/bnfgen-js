@@ -1,6 +1,6 @@
 {
   "name": "bnfgen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Random text generator that takes BNF-like grammar descriptions",
   "main": "bnfgen_module.js",
   "homepage": "https://github.com/dmbaturin/bnfgen-js",
